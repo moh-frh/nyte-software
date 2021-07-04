@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ReactComponent as Logo } from "../assets/logo.svg";
-import { ReactComponent as SearchIcon } from "../assets/search.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { ReactComponent as SearchIcon } from "../../assets/search.svg";
 import styled from "styled-components";
 
 const Nav = () => {

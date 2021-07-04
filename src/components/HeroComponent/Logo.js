@@ -1,12 +1,12 @@
 import React from "react";
-import DashLogo from "../assets/dash-logo-title.png";
+import NyteLogo from '../../assets/logo.png'
 import styled from "styled-components";
 
-const Dashboard = () => {
+const Logo = () => {
   return (
     <Container>
-      <img src={DashLogo} />
-      <p>Dashboard</p>
+      <img src={NyteLogo} />
+      <p>Nyte Software</p>
     </Container>
   );
 };
@@ -16,6 +16,6 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  color: #6B9FFF
+  color: #6b9fff;
 `;
-export default Dashboard;
+export default Logo;

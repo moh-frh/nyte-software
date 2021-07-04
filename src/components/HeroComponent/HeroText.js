@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Aio from "../assets/aio.png";
-import Splash from "../assets/splash.png";
+import Aio from "../../assets/aio.png";
+import Splash from "../../assets/splash.png";
 
 const HeroText = () => {
   return (
@@ -17,39 +17,43 @@ const HeroText = () => {
       </BtnContainer>
 
       <HomeNyte>
-        <div>
-          <img src={Aio} />
-          <HomeNyteTitle>Home of Nyte AIO</HomeNyteTitle>
-          <HomeNyteDesc>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod.
-          </HomeNyteDesc>
-        </div>
+        <HomeNyteContent>
+          <div>
+            <img src={Aio} />
+            <HomeNyteTitle>Home of Nyte AIO</HomeNyteTitle>
+            <HomeNyteDesc>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.
+            </HomeNyteDesc>
+          </div>
+        </HomeNyteContent>
 
-        <HomeNyte>
+        <HomeNyteContent>
           <img src={Splash} />
           <HomeNyteTitle>Home of Nyte Splash</HomeNyteTitle>
           <HomeNyteDesc>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </HomeNyteDesc>
-        </HomeNyte>
+        </HomeNyteContent>
       </HomeNyte>
     </Container>
   );
 };
 
 const HomeNyte = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+margin: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 `;
 
-const HomeNyteLogo = styled.div``;
+const HomeNyteContent = styled.div``
+
 const HomeNyteTitle = styled.h4`
   color: white;
 `;
-const HomeNyteDesc = styled.div`
+const HomeNyteDesc = styled.p`
   color: #c3caea;
 `;
 

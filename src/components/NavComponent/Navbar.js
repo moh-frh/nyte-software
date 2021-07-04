@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import LogoIcon from "../components/Logo";
-import Dashboard from '../components/Dashboard'
+import LogoIcon from "../../components/HeroComponent/Logo";
+import Dashboard from '../../components/NavComponent/Dashboard'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -107,7 +107,7 @@ const Nav = styled.div`
   left: 0;
   right: 0;
   z-index: 3;
-  margin: 0px 10% 0px 10%
+  margin: 0px 10% 0px 10%;
 `;
 
 const Menu = styled.div`

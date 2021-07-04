@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../assets/hero.png";
-import HeroText from "./HeroText";
+import image from "../../assets/hero.png";
+import HeroText from "./../HeroComponent/HeroText";
 import Tilt from "react-tilt";
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
 };
 
 const Left = styled.div`
-  width: 40%;
+  width: 50%;
   @media (max-width: 670px) {
     width: 100%;
     /* padding: 1rem; */
@@ -30,7 +30,7 @@ const Left = styled.div`
 `;
 
 const TiltWrapper = styled(Tilt)`
-  width: 60%;
+  width: 50%;
   min-width: 400px;
   @media (max-width: 670px) {
     display: none;
