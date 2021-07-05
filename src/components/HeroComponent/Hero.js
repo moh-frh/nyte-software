@@ -42,7 +42,7 @@ const Img = styled.img`
 `;
 
 const InnerWrapper = styled.div`
-margin: 10% 9% 10% 9%;
+  margin: 10% 9% 10% 9%;
   display: flex;
   justify-content: center;
   align-items: center;

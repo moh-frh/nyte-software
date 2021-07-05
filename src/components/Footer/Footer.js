@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NyteLogo from "../../assets/logo.png";
-
+import Terms from '../../components/Terms/Terms'
 const Footer = () => {
   return (
     <Container>
@@ -22,7 +22,8 @@ const Footer = () => {
         </Navigations>
 
         <UsefullLinks>
-          <h1>Dashboard</h1>
+          <h1>Useful Links</h1>
+          <p>Dashboard</p>
         </UsefullLinks>
 
         <Socials>
@@ -33,23 +34,21 @@ const Footer = () => {
           </NavigationContent>
         </Socials>
       </Links>
+
+      <Terms/>
     </Container>
   );
 };
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
-  border-bottom: 1px solid white;
-  width: 70%; 
-`;
-
-const Logo = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #121321;
+  padding: 2% 10% 2% 10%;
+  `;
+  
+  const Logo = styled.div`
 
   color: #6b9fff;
 `;
@@ -58,7 +57,7 @@ const Links = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 70%;
+  width: 100%;
   h1 {
     color: #c3caea;
   }

@@ -6,6 +6,8 @@ import Feature from "./components/FeatureComponent/Feature"
 import Stepper from './components/Stepper/Stepper'
 import Questions from './components/Questions/Questions'
 import Footer from './components/Footer/Footer'
+import Terms from './components/Terms/Terms'
+
 const App = () => {
   return (
     <>
