@@ -3,7 +3,9 @@ import styled from "styled-components";
 import Faq from "../../assets/faq.png";
 import Plus from "../../assets/plus.png";
 
-const dropdownOptions = [
+import Minus from "../../assets/minus.png";
+
+const dropdownOptions = [ 
   {
     title: "How much is Nyte AIO?",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -59,16 +61,18 @@ const Questions = () => {
             <DropdownContent key={index} onClick={dropdownClicked(index)}>
               <DropdownText>
                 <DropdownAction>
-                  <img src={Plus} />
+                  {state?.id === index && !!state?.flag ? (
+                    <img src={Minus} />
+                  ) : (
+                    <img src={Plus} />
+                  )}
                 </DropdownAction>
 
-                <DropdownTitle>
-                  {title}
-                </DropdownTitle>
+                <DropdownTitle>{title}</DropdownTitle>
               </DropdownText>
-                {state?.id === index && !!state?.flag && (
-                  <DropdownDescription>{description}</DropdownDescription>
-                )}
+              {state?.id === index && !!state?.flag && (
+                <DropdownDescription>{description}</DropdownDescription>
+              )}
             </DropdownContent>
           ))}
         </DropdownContents>
@@ -93,7 +97,6 @@ const Wrapper = styled.div`
 `;
 const Title = styled.div``;
 const DropdownTitle = styled.div`
-  
   color: white;
 `;
 const DropdownDescription = styled.div`

@@ -16,6 +16,13 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  color: #6B9FFF
+  p {
+    margin: 5px;
+    color: #6b9fff;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 export default Dashboard;

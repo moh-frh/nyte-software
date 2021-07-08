@@ -7,6 +7,7 @@ import Stepper from './components/Stepper/Stepper'
 import Questions from './components/Questions/Questions'
 import Footer from './components/Footer/Footer'
 import Terms from './components/Terms/Terms'
+import styled from "styled-components";
 
 const App = () => {
   return (
@@ -21,5 +22,8 @@ const App = () => {
     </>
   );
 };
+
+
+
 
 export default App;

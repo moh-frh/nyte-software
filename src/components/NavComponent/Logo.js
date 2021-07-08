@@ -16,6 +16,9 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  color: #6b9fff;
+  color: white;
+  img{
+    margin: 5px;
+  }
 `;
 export default Logo;

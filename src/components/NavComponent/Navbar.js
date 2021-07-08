@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import LogoIcon from "../../components/HeroComponent/Logo";
-import Dashboard from '../../components/NavComponent/Dashboard'
+import LogoIcon from "./Logo";
+import Dashboard from "../../components/NavComponent/Dashboard";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,6 @@ const Navbar = () => {
       <Container>
         <LogoIcon />
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
-          <span />
           <span />
           <span />
         </Hamburger>
@@ -23,7 +22,7 @@ const Navbar = () => {
           </LinkWrapper>
         </Menu>
 
-        <Dashboard/>
+        <Dashboard />
       </Container>
     </Nav>
   );
@@ -31,31 +30,9 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Button = styled.button`
-  font-size: 0.8rem;
-  background: #f774c5;
-  border: none;
-  padding: 0.8rem 1.1rem;
-  color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0px 13px 24px -7px #ecb6d7;
-  transition: all 0.3s ease-in-out;
-  margin-left: 0.5rem;
-  cursor: pointer;
-  &:hover {
-    box-shadow: 0px 17px 16px -11px #ecb6d7;
-    transform: translateY(-5px);
-  }
-
-  @media (max-width: 670px) {
-    /* width: 100%; */
-    padding: 0.3;
-  }
-`;
-
 const MenuLink = styled.a`
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 0.9rem;
   padding: 0.7rem 1.5rem;
   transition: all 0.2s ease-in;
@@ -83,7 +60,7 @@ const Container = styled.div`
 
   a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 0.9rem;
     padding: 0.7rem 1.5rem;
     transition: all 0.2s ease-in;
@@ -141,19 +118,27 @@ const LinkWrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+
 `;
 
 const Hamburger = styled.div`
   display: none;
-  flex-direction: column;
   cursor: pointer;
-  span {
-    height: 2px;
-    width: 25px;
-    background: #f774c5;
-    margin-bottom: 4px;
-    border-radius: 5px;
+  span: nth-child(1) {
+    width: 30.5px;
+    border: 2.59574px solid #ffffff;
+    background: white;
+    margin: 5px;
   }
+  
+  span: nth-child(2) {
+    width: 20.12px;
+    background: white;
+    margin: 5px;
+    border: 2.59574px solid #ffffff;
+    margin-bottom: 5px;
+  }
+
   @media (max-width: 768px) {
     display: flex;
   }
