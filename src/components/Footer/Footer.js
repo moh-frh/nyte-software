@@ -45,10 +45,11 @@ const Footer = () => {
 
 const Container = styled.div`
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
+  width: 100%;
   background: #121321;
-  padding: 2% 10% 2% 10%;
+  padding: 5%;
 `;
 
 const Logo = styled.div`

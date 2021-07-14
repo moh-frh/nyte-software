@@ -29,7 +29,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin: 17%;
+  margin-top: 17%;
+  margin-bottom: 17%;
 `;
 const Title = styled.h3`
   color: #6b9fff;

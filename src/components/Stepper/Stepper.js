@@ -84,7 +84,7 @@ const Stepper = () => {
 };
 
 const Container = styled.div`
-  width: 80%;
+  width: 100%;
   background-color: #181a2b;
   display: flex;
   align-items: center;
