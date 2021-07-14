@@ -1,0 +1,13 @@
+// components
+export {default as Feature} from '../components/FeatureComponent/Feature'
+export {default as Footer} from '../components/Footer/Footer'
+export {default as Hero} from '../components/HeroComponent/Hero'
+export {default as HeroText} from '../components/HeroComponent/HeroText'
+export {default as Dashboard} from '../components/NavComponent/Dashboard'
+export {default as Logo} from '../components/NavComponent/Logo'
+export {default as Nav} from '../components/NavComponent/Nav'
+export {default as Navbar} from '../components/NavComponent/Navbar'
+export {default as Questions} from '../components/Questions/Questions'
+export {default as Stepper} from '../components/Stepper/Stepper'
+export {default as Terms} from '../components/Terms/Terms'
+export {default as VariosSites} from './VariosSitesComponent/VariosSites'

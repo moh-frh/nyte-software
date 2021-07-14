@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Faq from "../../assets/faq.png";
-import Plus from "../../assets/plus.png";
+import Faq from "../../assets/images/faq.png";
+import Plus from "../../assets/images/plus.png";
 
-import Minus from "../../assets/minus.png";
+import Minus from "../../assets/images/minus.png";
 
-const dropdownOptions = [ 
+const dropdownOptions = [
   {
     title: "How much is Nyte AIO?",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -85,6 +85,7 @@ const Container = styled.div`
   padding: 10rem;
   h1 {
     color: white;
+    margin-bottom: 10%;
   }
 `;
 const Wrapper = styled.div`
@@ -98,6 +99,10 @@ const Wrapper = styled.div`
 const Title = styled.div``;
 const DropdownTitle = styled.div`
   color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 5%
 `;
 const DropdownDescription = styled.div`
   margin-left: 5%;

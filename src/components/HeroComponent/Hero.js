@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../../assets/hero.png";
+import image from "../../assets/images/hero.png";
 import HeroText from "./../HeroComponent/HeroText";
 import Tilt from "react-tilt";
 
-const Hero = () => {
+const Hero = () => { 
   return (
     <Container>
       <Wrapper>
@@ -29,7 +29,7 @@ const Left = styled.div`
   }
 `;
 
-const TiltWrapper = styled(Tilt)`
+const TiltWrapper = styled.image`
   width: 50%;
   min-width: 400px;
   @media (max-width: 670px) {

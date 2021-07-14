@@ -10,8 +10,7 @@ const Navbar = () => {
       <Container>
         <LogoIcon />
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
-          <span />
-          <span />
+        <svg width="31" height="15" fill="none" xmlns="http://www.w3.org/2000/svg" class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 2h30.5M10.383 13.68H30.5" stroke="#fff" stroke-width="2.596"></path></svg>
         </Hamburger>
         <Menu isOpen={isOpen}>
           <LinkWrapper>
@@ -21,8 +20,8 @@ const Navbar = () => {
             <MenuLink href="">FAQ</MenuLink>
           </LinkWrapper>
         </Menu>
-
         <Dashboard />
+
       </Container>
     </Nav>
   );
@@ -92,7 +91,7 @@ const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
       -webkit-backdrop-filter: blur(35px);
       backdrop-filter: blur(15px);
@@ -115,7 +114,7 @@ const LinkWrapper = styled.div`
   align-items: center;
   position: relative;
   padding: 1.5rem 0;
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     flex-direction: column;
   }
 
@@ -124,22 +123,23 @@ const LinkWrapper = styled.div`
 const Hamburger = styled.div`
   display: none;
   cursor: pointer;
-  span: nth-child(1) {
+  flex-direction: column;
+  span {
     width: 30.5px;
     border: 2.59574px solid #ffffff;
     background: white;
-    margin: 5px;
+    margin: 3px;
   }
   
-  span: nth-child(2) {
+  ${'' /* span: nth-child(2) {
     width: 20.12px;
     background: white;
     margin: 5px;
     border: 2.59574px solid #ffffff;
     margin-bottom: 5px;
-  }
+  } */}
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     display: flex;
   }
 `;

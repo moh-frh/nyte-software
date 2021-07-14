@@ -1,5 +1,5 @@
 import React from "react";
-import DashLogo from "../../assets/dash-logo-title.png";
+import DashLogo from "../../assets/images/dash-logo-title.png";
 import styled from "styled-components";
 
 const Dashboard = () => {
@@ -21,7 +21,7 @@ const Container = styled.div`
     color: #6b9fff;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     display: none;
   }
 `;

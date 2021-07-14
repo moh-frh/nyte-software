@@ -1,5 +1,5 @@
 import React from "react";
-import NyteLogo from '../../assets/logo.png'
+import NyteLogo from '../../assets/images/logo.png'
 import styled from "styled-components";
 
 const Logo = () => {

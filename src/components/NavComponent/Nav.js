@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
-import { ReactComponent as SearchIcon } from "../../assets/search.svg";
+import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { ReactComponent as SearchIcon } from "../../assets/images/search.svg";
 import styled from "styled-components";
 
 const Nav = () => {
@@ -95,7 +95,7 @@ const Button = styled.button`
     transform: translateY(-5px);
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 960px) {
     /* width: 100%; */
     padding: 0.3;
   }

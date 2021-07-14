@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Aio from "../../assets/aio.png";
-import Splash from "../../assets/splash.png";
+import Aio from "../../assets/images/aio.png";
+import Splash from "../../assets/images/splash.png";
+import colors from './../../assets/colors/colors';
 
 const HeroText = () => {
   return (
@@ -18,18 +19,21 @@ const HeroText = () => {
 
       <HomeNyte>
         <HomeNyteContent>
-          <div>
+          <HomeNyteImage>
             <img src={Aio} />
-            <HomeNyteTitle>Home of Nyte AIO</HomeNyteTitle>
-            <HomeNyteDesc>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod.
-            </HomeNyteDesc>
-          </div>
+          </HomeNyteImage>
+          <HomeNyteTitle>Home of Nyte AIO</HomeNyteTitle>
+          <HomeNyteDesc>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod.
+          </HomeNyteDesc>
         </HomeNyteContent>
 
         <HomeNyteContent>
-          <img src={Splash} />
+          <HomeNyteImage>
+            <img src={Splash} />
+          </HomeNyteImage>
+
           <HomeNyteTitle>Home of Nyte Splash</HomeNyteTitle>
           <HomeNyteDesc>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -42,19 +46,22 @@ const HeroText = () => {
 };
 
 const HomeNyte = styled.div`
-margin: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-const HomeNyteContent = styled.div``
+const HomeNyteContent = styled.div``;
 
+const HomeNyteImage = styled.image`
+`
 const HomeNyteTitle = styled.h4`
   color: white;
 `;
 const HomeNyteDesc = styled.p`
   color: #c3caea;
+  margin-top: -5%;
 `;
 
 const Title = styled.h1`
@@ -80,30 +87,31 @@ const BtnContainer = styled.div`
     margin: 0.5rem;
     font-size: 0.8rem;
     cursor: pointer;
-    &:hover {
-      box-shadow: 0px 17px 16px -11px #81d1ff;
-      transform: translateY(-5px);
-    }
   }
 
   .readmore {
-    color: #81d1ff;
-    background: transparent;
-    border: 1px solid #81d1ff;
+    background: transparent;;
+    border: 1px solid rgba(107, 159, 255, 0.5);
+    color: #6b9fff;
+
+    box-sizing: border-box;
+    border-radius: 4px;
     &:hover {
-      box-shadow: 0px 17px 16px -11px #81d1ff;
-      transform: translateY(-5px);
+      border: 1px solid #6b9fff;
     }
   }
 `;
 
 const Container = styled.div`
-  padding: 1rem;
   h5 {
     color: #515151;
     font-weight: 500;
     font-size: 0.9rem;
     margin-bottom: 1rem;
+  }
+
+  @media (max-width: 960px) {
+    width: 100%
   }
 `;
 
