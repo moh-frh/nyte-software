@@ -18,12 +18,12 @@ const Feature = () => {
           </p>
         </FeatureText>
         <FeatureImageContent>
-          <img src={FeatureImage} />
+          <img src={FeatureImage} alt="example" />
         </FeatureImageContent>
       </Container>
       <Container>
         <FeatureImageContent>
-          <img src={DeclinesImage} />
+          <img src={DeclinesImage} alt="example"/>
         </FeatureImageContent>
 
         <FeatureText>

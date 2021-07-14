@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import image from "../../assets/images/hero.png";
 import HeroText from "./../HeroComponent/HeroText";
-import Tilt from "react-tilt";
 
 const Hero = () => { 
   return (

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Aio from "../../assets/images/aio.png";
 import Splash from "../../assets/images/splash.png";
-import colors from './../../assets/colors/colors';
 
 const HeroText = () => {
   return (
@@ -20,7 +19,7 @@ const HeroText = () => {
       <HomeNyte>
         <HomeNyteContent>
           <HomeNyteImage>
-            <img src={Aio} />
+            <img src={Aio} alt="example"/>
           </HomeNyteImage>
           <HomeNyteTitle>Home of Nyte AIO</HomeNyteTitle>
           <HomeNyteDesc>
@@ -31,7 +30,7 @@ const HeroText = () => {
 
         <HomeNyteContent>
           <HomeNyteImage>
-            <img src={Splash} />
+            <img src={Splash} alt="example"/>
           </HomeNyteImage>
 
           <HomeNyteTitle>Home of Nyte Splash</HomeNyteTitle>

@@ -12,12 +12,12 @@ const VariosSites = () => {
     <Container>
       <Title>Supporting various sites such as</Title>
       <Images>
-        <img src={yeezy} />
-        <img src={kids} />
-        <img src={Eastbay} />
-        <img src={footaction} />
-        <img src={champs} />
-        <img src={footLocker} />
+        <img src={yeezy}  alt="example"/>
+        <img src={kids}  alt="example"/>
+        <img src={Eastbay} alt="example" />
+        <img src={footaction}  alt="example"/>
+        <img src={champs}  alt="example"/>
+        <img src={footLocker}  alt="example"/>
       </Images>
     </Container>
   );

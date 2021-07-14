@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Logo = () => {
   return (
     <Container>
-      <img src={NyteLogo} />
+      <img src={NyteLogo} alt="example"/>
       <p>Nyte Software</p>
     </Container>
   );

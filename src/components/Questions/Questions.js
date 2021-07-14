@@ -53,7 +53,7 @@ const Questions = () => {
       <h1>Frequently Asked Questions</h1>
       <Wrapper>
         <ImageContent>
-          <img src={Faq} />
+          <img src={Faq} alt="example"/>
         </ImageContent>
 
         <DropdownContents>
@@ -62,9 +62,9 @@ const Questions = () => {
               <DropdownText>
                 <DropdownAction>
                   {state?.id === index && !!state?.flag ? (
-                    <img src={Minus} />
+                    <img src={Minus} alt="example"/>
                   ) : (
-                    <img src={Plus} />
+                    <img src={Plus} alt="example"/>
                   )}
                 </DropdownAction>
 

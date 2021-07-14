@@ -57,13 +57,13 @@ const Stepper = () => {
           <div key={index} onClick={() => stepClicked(index)}>
             {Step === index ? (
               <TextStepperClicked>
-                <img src={step.icon} />
+                <img src={step.icon} alt="example"/>
                 <h4>{step.title}</h4>
                 <p>{step.description}</p>
               </TextStepperClicked>
             ) : (
               <TextStepper>
-                <img src={step.icon} />
+                <img src={step.icon} alt="example" />
                 <h4>{step.title}</h4>
                 <p>{step.description}</p>
               </TextStepper>
@@ -73,11 +73,11 @@ const Stepper = () => {
       </WrapperText>
 
       <WrapperImage>
-        {Step === null && <img src={Image1} />}
-        {Step === 0 && <img src={Image1} />}
-        {Step === 1 && <img src={Image2} />}
-        {Step === 2 && <img src={Image3} />}
-        {Step === 3 && <img src={Image4} />}
+        {Step === null && <img src={Image1} alt="example"/>}
+        {Step === 0 && <img src={Image1} alt="example"/>}
+        {Step === 1 && <img src={Image2} alt="example"/>}
+        {Step === 2 && <img src={Image3} alt="example"/>}
+        {Step === 3 && <img src={Image4} alt="example"/>}
       </WrapperImage>
     </Container>
   );
@@ -126,6 +126,5 @@ const TextStepperClicked = styled.div`
     color: white;
   }
 `;
-const ImageStepper = styled.div``;
 
 export default Stepper;

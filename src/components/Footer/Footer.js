@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Container>
       <Logo>
-        <img src={NyteLogo} />
+        <img src={NyteLogo} alt="example"/>
         <h4>Nyte Software</h4>
       </Logo>
 

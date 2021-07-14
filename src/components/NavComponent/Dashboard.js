@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Dashboard = () => {
   return (
     <Container>
-      <img src={DashLogo} />
+      <img src={DashLogo} alt="example"/>
       <p>Dashboard</p>
     </Container>
   );
