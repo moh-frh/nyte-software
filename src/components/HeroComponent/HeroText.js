@@ -19,7 +19,7 @@ const HeroText = () => {
       <HomeNyte>
         <HomeNyteContent>
           <HomeNyteImage>
-            <img src={Aio} alt="example"/>
+            <img src={Aio} alt="example" />
           </HomeNyteImage>
           <HomeNyteTitle>Home of Nyte AIO</HomeNyteTitle>
           <HomeNyteDesc>
@@ -30,7 +30,7 @@ const HeroText = () => {
 
         <HomeNyteContent>
           <HomeNyteImage>
-            <img src={Splash} alt="example"/>
+            <img src={Splash} alt="example" />
           </HomeNyteImage>
 
           <HomeNyteTitle>Home of Nyte Splash</HomeNyteTitle>
@@ -44,8 +44,22 @@ const HeroText = () => {
   );
 };
 
+const Container = styled.div`
+  width: 50%;
+  h5 {
+    color: #515151;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
 const HomeNyte = styled.div`
-  margin: 40px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,8 +67,7 @@ const HomeNyte = styled.div`
 
 const HomeNyteContent = styled.div``;
 
-const HomeNyteImage = styled.image`
-`
+const HomeNyteImage = styled.image``;
 const HomeNyteTitle = styled.h4`
   color: white;
 `;
@@ -71,7 +84,14 @@ const Title = styled.h1`
   color: #ffffff;
 `;
 const Description = styled.p`
-  color: #c3caea;
+
+  font-family: Inter;
+font-weight: 500;
+font-size: 21px;
+line-height: 29px;
+
+color: #C3CAEA;
+
 `;
 
 const BtnContainer = styled.div`
@@ -89,7 +109,7 @@ const BtnContainer = styled.div`
   }
 
   .readmore {
-    background: transparent;;
+    background: transparent;
     border: 1px solid rgba(107, 159, 255, 0.5);
     color: #6b9fff;
 
@@ -98,19 +118,6 @@ const BtnContainer = styled.div`
     &:hover {
       border: 1px solid #6b9fff;
     }
-  }
-`;
-
-const Container = styled.div`
-  h5 {
-    color: #515151;
-    font-weight: 500;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  @media (max-width: 960px) {
-    width: 100%
   }
 `;
 

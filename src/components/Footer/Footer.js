@@ -47,9 +47,11 @@ const Container = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 100%;
   background: #121321;
-  padding: 5%;
+  padding: 5% 15% 5% 15%;
+
+  margin-left: -13%;
+  margin-right: -13%;
 `;
 
 const Logo = styled.div`

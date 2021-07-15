@@ -19,9 +19,9 @@ const App = () => {
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: space-between;
   flex-direction: column;
-  padding: 50px;
+  padding: 0% 10% 0% 10%;
 `;
 
 

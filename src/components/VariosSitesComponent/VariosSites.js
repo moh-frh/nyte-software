@@ -32,8 +32,14 @@ const Container = styled.div`
   margin-top: 17%;
   margin-bottom: 17%;
 `;
-const Title = styled.h3`
-  color: #6b9fff;
+const Title = styled.p`
+  font-family: Inter;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+text-align: center;
+
+color: #6B9FFF;
 `;
 const Images = styled.h3`
   img {

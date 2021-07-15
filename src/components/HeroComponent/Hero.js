@@ -3,69 +3,36 @@ import styled from "styled-components";
 import image from "../../assets/images/hero.png";
 import HeroText from "./../HeroComponent/HeroText";
 
-const Hero = () => { 
+const Hero = () => {
   return (
     <Container>
-      <Wrapper>
-        <InnerWrapper>
-          <Left>
-            <HeroText />
-          </Left>
-          <TiltWrapper options={{ max: 25 }}>
-            <Img src={image} alt="@gouthamgtronics" />
-          </TiltWrapper>
-        </InnerWrapper>
-      </Wrapper>
+      <InnerWrapper>
+        <HeroText />
+        <Img src={image} alt="@gouthamgtronics" />
+      </InnerWrapper>
     </Container>
   );
 };
 
-const Left = styled.div`
-  width: 50%;
-  @media (max-width: 670px) {
-    width: 100%;
-    /* padding: 1rem; */
-  }
-`;
-
-const TiltWrapper = styled.image`
-  width: 50%;
-  min-width: 400px;
-  @media (max-width: 670px) {
-    display: none;
-  }
+const Container = styled.div`
+  width: 100%;
+  background-color: #151724;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Img = styled.img`
-  width: 100%;
+  width: 50%;
 `;
 
 const InnerWrapper = styled.div`
-  margin: 10% 9% 10% 9%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-`;
-const Wrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-  /* margin: 2rem; */
-  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    -webkit-backdrop-filter: blur(35px);
-    backdrop-filter: blur(35px);
-    // background-color: rgba(255, 255, 255, 0.5);
-  }
 `;
 
-const Container = styled.div`
-  background-color: #151724;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-`;
+
 
 export default Hero;

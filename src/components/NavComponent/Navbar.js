@@ -6,12 +6,8 @@ import Dashboard from "../../components/NavComponent/Dashboard";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Nav>
       <Container>
         <LogoIcon />
-        <Hamburger onClick={() => setIsOpen(!isOpen)}>
-        <svg width="31" height="15" fill="none" xmlns="http://www.w3.org/2000/svg" class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 2h30.5M10.383 13.68H30.5" stroke="#fff" stroke-width="2.596"></path></svg>
-        </Hamburger>
         <Menu isOpen={isOpen}>
           <LinkWrapper>
             <MenuLink href="">Home</MenuLink>
@@ -22,35 +18,18 @@ const Navbar = () => {
         </Menu>
         <Dashboard />
 
+        <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <svg width="31" height="15" fill="none" xmlns="http://www.w3.org/2000/svg" class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 2h30.5M10.383 13.68H30.5" stroke="#fff" stroke-width="2.596"></path></svg>
+        </Hamburger>
       </Container>
-    </Nav>
   );
 };
 
-export default Navbar;
-
-const MenuLink = styled.a`
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 0.9rem;
-  padding: 0.7rem 1.5rem;
-  transition: all 0.2s ease-in;
-  border-radius: 0.5rem;
-  font-weight: 500;
-
-  &:hover {
-    color: #7781d4;
-    background: #e7e9fc;
-  }
-`;
 
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  // max-width: 1000px;
-  width: 100%;
 
   svg {
     height: 1.4rem;
@@ -73,18 +52,24 @@ const Container = styled.div`
   }
 `;
 
-const Nav = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  margin: 0px 10% 0px 10%;
+const MenuLink = styled.a`
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  transition: all 0.2s ease-in;
+  border-radius: 0.5rem;
+  font-weight: 500;
+
+  &:hover {
+    color: #7781d4;
+    background: #e7e9fc;
+  }
 `;
+
+
+
+
 
 const Menu = styled.div`
   display: flex;
@@ -143,3 +128,5 @@ const Hamburger = styled.div`
     display: flex;
   }
 `;
+
+export default Navbar;

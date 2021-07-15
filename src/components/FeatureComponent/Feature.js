@@ -40,8 +40,19 @@ const Feature = () => {
   );
 };
 
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  margin-top: 5%;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
 const FeatureText = styled.div`
-  padding: 10%;
   width: 50%;
   h3 {
     color: #6b9fff;
@@ -64,16 +75,6 @@ const FeatureText = styled.div`
 const FeatureImageContent = styled.div`
   width: 50%;
 `;
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: row;
 
-  margin-top: 5%;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
 
 export default Feature;

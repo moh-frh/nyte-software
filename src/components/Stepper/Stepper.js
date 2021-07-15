@@ -57,7 +57,7 @@ const Stepper = () => {
           <div key={index} onClick={() => stepClicked(index)}>
             {Step === index ? (
               <TextStepperClicked>
-                <img src={step.icon} alt="example"/>
+                <img src={step.icon} alt="example" />
                 <h4>{step.title}</h4>
                 <p>{step.description}</p>
               </TextStepperClicked>
@@ -73,36 +73,33 @@ const Stepper = () => {
       </WrapperText>
 
       <WrapperImage>
-        {Step === null && <img src={Image1} alt="example"/>}
-        {Step === 0 && <img src={Image1} alt="example"/>}
-        {Step === 1 && <img src={Image2} alt="example"/>}
-        {Step === 2 && <img src={Image3} alt="example"/>}
-        {Step === 3 && <img src={Image4} alt="example"/>}
+        {Step === null && <img src={Image1} alt="example" />}
+        {Step === 0 && <img src={Image1} alt="example" />}
+        {Step === 1 && <img src={Image2} alt="example" />}
+        {Step === 2 && <img src={Image3} alt="example" />}
+        {Step === 3 && <img src={Image4} alt="example" />}
       </WrapperImage>
     </Container>
   );
 };
 
 const Container = styled.div`
-  width: 100%;
   background-color: #181a2b;
+  margin-left: -13%;
+  margin-right: -13%;
+  padding: 10% 20% 10% 20%;
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding: 10rem;
 `;
 const WrapperText = styled.div`
-  width: 50%;
+width: 50%;
 `;
 const WrapperImage = styled.div`
-  width: 50%;
+width: 50%;
 `;
 const TextStepper = styled.div`
-  &:focus {
-    background-color: red;
-  }
   cursor: pointer;
-  padding-left: 3rem;
   margin-bottom: 3rem;
   p {
     color: #c3caea;
@@ -112,9 +109,6 @@ const TextStepper = styled.div`
   }
 `;
 const TextStepperClicked = styled.div`
-  &:focus {
-    background-color: red;
-  }
   cursor: pointer;
   border-left: 3px solid #6b9fff;
   padding-left: 3rem;

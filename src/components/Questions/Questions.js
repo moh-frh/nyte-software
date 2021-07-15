@@ -69,10 +69,10 @@ const Questions = () => {
                 </DropdownAction>
 
                 <DropdownTitle>{title}</DropdownTitle>
+              </DropdownText>
                 {state?.id === index && !!state?.flag && (
                   <DropdownDescription>{description}</DropdownDescription>
                 )}
-              </DropdownText>
             </DropdownContent>
           ))}
         </DropdownContents>
@@ -85,7 +85,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  padding: 10% 0% 10% 0%;
   h1 {
     color: white;
     margin-bottom: 10%;
@@ -125,7 +125,7 @@ const DropdownContents = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%
 `;
 
 const DropdownContent = styled.div`
